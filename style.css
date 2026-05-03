@@ -17,7 +17,7 @@ html,body{
   height: 220px;
   width: 100%;
   background: linear-gradient(rgba(128,0,128,0.4), rgba(0,0,255,0.4)),
-              url("images/todoapp.jpg");
+              url("Images/todoapp.jpg");
   background-size: cover;
   background-position: center;
 
