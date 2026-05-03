@@ -1,0 +1,156 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+
+
+.navbar {
+  position: relative;
+  height: 220px;
+  width: 100%;
+  background: linear-gradient(rgba(128,0,128,0.4), rgba(0,0,255,0.4)),
+              url("images/todoapp.jpg");
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  justify-content: center;  
+  align-items: center;      
+}
+
+.logo-text {
+  font-size: 60px;
+  font-weight: bold;
+  color: white;
+  letter-spacing: 3px;
+}
+
+
+.Heading {
+  width: 500px;             
+  max-width: 90%;
+  margin: -40px auto 0;      
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+
+
+.task-add {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.task-add input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  outline: none;
+  font-size: 16px;
+}
+
+.add-btn {
+  background: #2d3e50;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px;
+  margin-top: 10px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background: #fafafa;
+}
+
+.box span {
+  flex: 1;
+  margin-left: 10px;
+  text-align: left;
+  font-size: 15px;
+}
+
+
+.delete-btn {
+  background: none;
+  border: none;
+  color: gray;
+  cursor: pointer;
+}
+
+
+.quotes {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #555;
+  text-align: center;
+}
+
+#result {
+  font-style: italic;
+  margin-top: 8px;
+}
+
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+
+@media (max-width: 600px) {
+
+  .Heading {
+    width: 90%;
+    padding: 20px;
+    margin: -50px auto 0;
+  }
+
+  .navbar {
+    height: 170px;
+  }
+
+  .logo {
+    height: 40px;
+    left: 20px;
+    top: 15px;
+  }
+
+  .task-add {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .add-btn {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  .box {
+    flex-direction: row;
+    gap: 10px;
+  }
+}
